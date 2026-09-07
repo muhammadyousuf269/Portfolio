@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Yousuf — Strategic Thumbnail Design</title>
+  <meta name="description" content="High-quality, custom YouTube thumbnails designed to boost your CTR, grow your channel, and make your content stand out. Muhammad Yousuf — Thumbnail Designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+</head>
+<body>
+
+  <!-- Ambient background + grain -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">MY<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <a href="#contact" class="btn btn-small btn-neon nav-cta">Get Thumbnails</a>
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <!-- full-bleed moving wall of real thumbnails (rows built by js/main.js) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">✦ Muhammad Yousuf · Thumbnail Designer</p>
+          <h1 class="reveal">
+            Strategic<br />
+            Thumbnail<br />
+            Design
+          </h1>
+          <p class="hero-tagline reveal">
+            High-quality, custom thumbnails designed to boost your CTR, grow your channel,
+            and make your content stand out.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#contact" class="btn btn-neon">Get Thumbnails →</a>
+            <a href="#work" class="btn btn-ghost">See Recent Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED WORK ============ -->
+    <section class="work" id="work">
+      <div class="section-head reveal">
+        <p class="eyebrow">✦ Portfolio</p>
+        <h2>Featured <span class="gradient-text">Thumbnails</span></h2>
+        <p class="section-sub">A taste of the thumbnails I've crafted for creators across every niche.</p>
+      </div>
+
+      <div class="filters reveal" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tech">AI &amp; Tech</button>
+        <button class="filter-btn" data-filter="business">Business</button>
+        <button class="filter-btn" data-filter="creators">Creators</button>
+      </div>
+
+      <div class="gallery" id="gallery"><!-- rendered by JS --></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-copy reveal">
+          <p class="eyebrow">✦ About Me</p>
+          <h2>The designer behind<br />the <span class="gradient-text">clicks</span></h2>
+          <p>
+            Hi, I'm Muhammad Yousuf — a thumbnail designer and strategist obsessed with that
+            one second of hesitation that makes someone click. I blend bold typography,
+            punchy color and facial emotion into visuals that stop the scroll.
+          </p>
+          <p>
+            I've worked with gamers, vloggers, podcasters and faceless channels, packaging
+            every upload so it earns its click before a single frame plays.
+          </p>
+          <div class="about-cta">
+            <a href="#contact" class="btn btn-neon">Start a Project</a>
+          </div>
+        </div>
+
+        <div class="about-side reveal">
+          <div class="skills">
+            <h3>Skills &amp; Tools</h3>
+            <div class="skill">
+              <div class="skill-top"><span>Photoshop</span><span>98%</span></div>
+              <div class="skill-bar"><i style="--w: 98%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>Illustrator</span><span>90%</span></div>
+              <div class="skill-bar"><i style="--w: 90%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>After Effects</span><span>80%</span></div>
+              <div class="skill-bar"><i style="--w: 80%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>Midjourney / AI Assets</span><span>88%</span></div>
+              <div class="skill-bar"><i style="--w: 88%"></i></div>
+            </div>
+          </div>
+          <div class="tool-badges">
+            <span>YouTube</span><span>TikTok</span><span>CTR Analysis</span>
+            <span>Thumbnail A/B Testing</span><span>Brand Kits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+      <div class="section-head reveal">
+        <p class="eyebrow">✦ FAQ</p>
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you offer thumbnail design lessons?<span class="faq-icon" aria-hidden="true"></span></button>
+          <div class="faq-a"><div><p>Yes — I also offer personalized 1:1 design lessons. Message me and we can arrange a session that fits your level and goals.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do we get started?<span class="faq-icon" aria-hidden="true"></span></button>
+          <div class="faq-a"><div><p>It's really simple. You can reach me on WhatsApp, Discord, Email or Instagram — we discuss your channel and can start working on the first project right away.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does a typical project take?<span class="faq-icon" aria-hidden="true"></span></button>
+          <div class="faq-a"><div><p>Typically around 24 to 48 hours at most. If it's urgent, tell me your deadline and I'll do my best to speed things up.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What do you need from me to create a thumbnail?<span class="faq-icon" aria-hidden="true"></span></button>
+          <div class="faq-a"><div><p>Usually just the video title, a brief description of the video, any style you want to emulate, and any specific images you want included. Send what you have and I'll handle the rest.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What if I don't like the thumbnail you made?<span class="faq-icon" aria-hidden="true"></span></button>
+          <div class="faq-a"><div><p>That rarely happens, because I always present a detailed concept before diving into the design. Still, you're always welcome to request revisions until it feels right.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">✦ Contact</p>
+          <h2>Let's make your next upload <span class="gradient-text">unmissable.</span></h2>
+          <p>
+            Got a video dropping soon? Reach me on any platform below — I usually
+            reply within a few hours and send a free concept before we start.
+          </p>
+          <div class="channel-grid">
+            <a class="channel" href="https://wa.me/923413806486" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <span class="ch-ic">💬</span>
+              <span class="ch-name">WhatsApp</span>
+              <span class="ch-handle">+92 341 3806486</span>
+            </a>
+            <a class="channel" href="#" aria-label="Discord">
+              <span class="ch-ic">🎮</span>
+              <span class="ch-name">Discord</span>
+              <span class="ch-handle">@muhammadyousuf18</span>
+            </a>
+            <a class="channel" href="mailto:muhammadyousuf7465@gmail.com" aria-label="Email">
+              <span class="ch-ic">✉️</span>
+              <span class="ch-name">Email</span>
+              <span class="ch-handle">muhammadyousuf7465@gmail.com</span>
+            </a>
+            <a class="channel" href="https://www.instagram.com/yousufdesigns1" aria-label="Instagram" target="_blank" rel="noopener">
+              <span class="ch-ic">📸</span>
+              <span class="ch-name">Instagram</span>
+              <span class="ch-handle">@yousufdesigns1</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="channel">Channel / Niche</label>
+            <input type="text" id="channel" name="channel" placeholder="e.g. Gaming, Tech, Vlogs…" />
+          </div>
+          <div class="field">
+            <label for="message">Tell me about your video</label>
+            <textarea id="message" name="message" rows="4" placeholder="Topic, style, deadline, references…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-neon btn-block">Send Message 🚀</button>
+          <p class="form-note">Prefer email? Write to <a href="mailto:muhammadyousuf7465@gmail.com">muhammadyousuf7465@gmail.com</a></p>
+          <p class="form-success" id="formSuccess" hidden>✓ Message ready! Your email app should open — or copy the details and send them over.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year">2026</span> Muhammad Yousuf — Thumbnail Designer</span>
+      <a href="#hero" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+    <figure class="lb-stage" id="lbStage"></figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
