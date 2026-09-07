@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Ghulam Nabi - Social Media Influencer & Web Designer</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #121212;
+            --primary-red: #e60023;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(5, 5, 5, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .navbar nav a:hover {
+            color: var(--text-main);
+        }
+
+        .btn-hire {
+            background-color: var(--primary-red);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 8%;
+            background: linear-gradient(135deg, #1a0005 0%, var(--bg-color) 100%);
+            border-radius: 0 0 40px 40px;
+            margin-bottom: 50px;
+            gap: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content h1 span {
+            color: var(--primary-red);
+        }
+
+        .hero-content p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .hero-buttons a {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 15px;
+            transition: opacity 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-red);
+            color: white;
+        }
+
+        .btn-secondary {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .hero-buttons a:hover {
+            opacity: 0.85;
+        }
+
+        /* Hero Card Image Container */
+        .hero-card {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-img-container {
+            width: 320px;
+            height: 380px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            border: 2px solid var(--primary-red);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(230, 0, 35, 0.3);
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            padding: 50px 8%;
+        }
+
+        .skills-section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .skills-section p {
+            color: var(--text-muted);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .skill-category {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-red);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category ul li {
+            padding: 6px 0;
+            color: var(--text-muted);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 8%;
+            background-color: var(--card-bg);
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-section h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            background: #1e1e1e;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            outline: none;
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--primary-red);
+        }
+
+        .btn-submit {
+            background-color: var(--primary-red);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            float: right;
+            transition: opacity 0.3s;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            background-color: var(--bg-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-content p {
+                margin: 0 auto 30px auto;
+            }
+            .form-group {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">Ahmed Ghulam Nabi</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Expertise</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="btn-hire">Collaborate</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm Ahmed Ghulam Nabi, <br><span>Social Media Influencer & Web Designer</span></h1>
+            <p>Blending creative digital branding, engaging social media presence, and modern web design to bring unique ideas to life.</p>
+            <div class="hero-buttons">
+                <a href="#skills" class="btn-primary">Explore Skills</a>
+                <a href="#contact" class="btn-contact btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <!-- Replace 'your-image.jpg' with your actual picture filename in the same folder -->
+            <div class="profile-img-container">
+                <img src="WhatsApp_Image_2026-09-03_at_5.06.17_PM-removebg-preview.png" alt="Ahmed Ghulam Nabi">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise Section -->
+    <section id="skills" class="skills-section">
+        <h2>Core Competencies</h2>
+        <p>A breakdown of my professional skills spanning digital media and modern web creation.</p>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Social Media & Influencing</h3>
+                <ul>
+                    <li>Content Strategy & Planning</li>
+                    <li>Audience Engagement</li>
+                    <li>Brand Promotion & Campaigns</li>
+                    <li>Digital Storytelling</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Web Design & Development</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>Responsive UI Layouts</li>
+                    <li>UI/UX Design Concepts</li>
+                    <li>Modern Landing Pages</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Applications</h3>
+                <ul>
+                    <li>Microsoft Word, Excel, PowerPoint</li>
+                    <li>Visual Studio Code</li>
+                    <li>Design & Editing Tools</li>
+                    <li>Social Media Dashboards</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>LET'S CONNECT</h2>
+        <div class="contact-container">
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <input type="email" placeholder="Your Email Address" required>
+                <textarea placeholder="Type your message or collaboration proposal here..." rows="5" required></textarea>
+                <button type="submit" class="btn-submit">Send Message →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Ahmed Ghulam Nabi. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
